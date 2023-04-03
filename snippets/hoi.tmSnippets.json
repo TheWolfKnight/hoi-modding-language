@@ -1,3 +1,31 @@
 {
+  "Add Date": {
+    "prefix": "date",
+    "body": "\"$1.$2.$3.$0\"",
+    "description": "A snippet to quickly add a date"
+  },
 
+  "Add focus": {
+    "prefix": "focus",
+    "body": [
+      "focus = {",
+      "\tid = $1",
+      "\ticon = $2",
+      "",
+      "\tprerequisite = {$3",
+      "\t}",
+      "",
+      "\trelative_position_id = $4",
+      "",
+      "\tcost = $5",
+      "",
+      "\tx = $6",
+      "\ty = $7",
+      "",
+      "\tcompletion_reward = {$0",
+      "\t}",
+      "}"
+    ],
+    "description": "Adds the skeletal body of a focus"
+  }
 }
