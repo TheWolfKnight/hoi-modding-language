@@ -27,5 +27,47 @@
       "}"
     ],
     "description": "Adds the skeletal body of a focus"
+  },
+
+  "Add character": {
+    "prefix": "character",
+    "body": [
+      "character = {",
+      "\tname = $1",
+      "",
+      "\tportraits = {",
+      "\t\tcivilian = {",
+      "\t\t\tlarge = $2",
+      "\t\t\tsmall = $3",
+      "\t\t}",
+      "\t\tarmy = {",
+      "\t\t\tlarge = $4",
+      "\t\t}",
+      "\t}",
+      "",
+      "\tcountry_leader = {",
+      "\t\tideology = $5",
+      "\t\ttrait = {$6",
+      "\t\t}",
+      "\t\tdesc = $7",
+      "\t\texpire = $8",
+      "\t}",
+      "",
+      "\tadvisor = {",
+      "\t\tslot = $9",
+      "\t\tidea_token = $10",
+      "\t\talowed = {$11",
+      "\t\t}",
+      "\t\tavailable = {$12",
+      "\t\t}",
+      "\t\ttrait = {$13",
+      "\t\t}",
+      "\t\tcan_be_fired = ${14:yes}",
+      "\t\tai_will_do = {",
+      "\t\t\tfactor = $15",
+      "\t\t}",
+      "\t}",
+      "}"
+    ]
   }
 }
