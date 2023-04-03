@@ -1,0 +1,32 @@
+{
+  "name": "hoi-modding-language",
+  "displayName": "HOI Modding Language",
+  "description": "A support language for coding in HOI",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "hoi",
+      "aliases": ["HOI Modding Language", "hoi"],
+      "extensions": [".hoi_focus .hoi_event .hoi_ideas .hoi"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "hoi",
+      "scopeName": "source.hoi",
+      "path": "./syntaxes/hoi.tmLanguage.json"
+    }],
+    "snippets": [
+      {
+        "language": "hoi",
+        "path": "./snippets/hoi.tmSnippets.json"
+      }
+    ]
+  }
+}

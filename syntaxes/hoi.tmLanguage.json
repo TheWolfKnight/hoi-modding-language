@@ -1,0 +1,85 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "HOI Modding Language",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#value_types"
+		},
+		{
+			"include": "#comment"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.identifier.hoi",
+					"match": "\\b(add_namespace|id|title|desc|picture|target|has_completed_focus|name|tag|icon|set_global_flag|custom_effect_tooltip|set_country_flag|type|add_ideas|set_party_name|ideology|long_name|relative_position_id|remove_idea|add_idea|has_government|has_global_flag|character|will_lead_to_war_with|has_idea|promote_character|controls_state|set_cosmetic_tag|is_in_faction_with|has_war_with|is_controlled_by|is_subject_of|unlock_decision_tooltip|hold_election|country_exists|surrender_progress|get_best_alliance_match_democratic_effect)\\b"
+				},
+				{
+					"name":"keyword.control.boolean.hoi",
+					"match": "\\b(is_in_faction|always|cancel_if_invalid|continue_if_invalid|is_triggered_only|strength_ratio|transfer_troops|available_if_capitulated|can_create_factions|is_subject|exists|is_puppet|has_capitulated|is_major|is_faction_leader)\\b"
+				},
+				{
+					"name": "keyword.control.numeric.hoi",
+					"match": "\\b(value|factor|add|cost|add_threat|add_political_power|hours|days|ratio|x|y|skill|legacy_id|attack_skill|defense_skill|maneuvering_skill|coordination_skill|owns_state|expire|add_state_claim|controls_state|size|add_state_core)\\b"
+				},
+				{
+					"name":"keyword.control.object.hoi",
+					"match": "\\b(country|country_event|bypass|available|ai_will_do|mutually_exclusive|prerequisite|focus|modifier|focus_tree|has_opinion|ai_chance|random_list|option|hidden_effect|news_event|create_wargoal|completion_reward|complete_tooltip|search_filters|swap_ideas|traits|set_rule|add_naval_commander_role|random_country|generator|has_army_manpower|add_ai_strategy|controller|add_relation_modifier|set_politics|remove_opinion_modifier|every_country|any_other_country)\\b"
+				},
+				{
+					"name": "keyword.operator.hoi",
+					"match": "\\b(if|NOT|AND|OR|limit|else)\\b"
+				},
+				{
+					"name": "keyword.control.mentions.hoi",
+					"match": "\\b(OWNER|PREV|ROOT)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.hoi",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.hoi",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comment": {
+			"name": "comment",
+			"begin": "#",
+			"end": "\n"
+		},
+		"value_types": {
+			"patterns": [
+				{
+					"name": "constant.other.boolean.hoi",
+					"match": "\\b(yes|no)\\b"
+				},
+				{
+					"name": "constant.numeric.hoi",
+					"match": "\\b-?[0-9]+\\b"
+				},
+				{
+					"name": "constant.identifier.hoi",
+					"match": "\\b[a-zA-Z_0-9.]+\\b"
+				},
+				{
+					"name": "constant.varibale.hoi",
+					"match": "\\bvar:[a-zA-Z_]+\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.hoi"
+}
