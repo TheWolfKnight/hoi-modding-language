@@ -152,8 +152,8 @@
       "\t\t}",
       "\t\tattack_skill = $4",
       "\t\tdefense_skill = $5",
-      "\t\tplanning_skill = $6",
-      "\t\tlogistic_skill = $7",
+      "\t\tmaneuvering_skill = $6",
+      "\t\tcoordination_skill = $7",
       "\t}",
       "}"
     ],
