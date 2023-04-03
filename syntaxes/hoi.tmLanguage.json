@@ -28,11 +28,11 @@
 				},
 				{
 					"name": "keyword.control.numeric.hoi",
-					"match": "\\b(value|factor|add|cost|add_threat|add_political_power|hours|days|ratio|x|y|skill|legacy_id|attack_skill|defense_skill|maneuvering_skill|coordination_skill|owns_state|expire|add_state_claim|controls_state|size|add_state_core)\\b"
+					"match": "\\b(value|factor|add|cost|add_threat|add_political_power|hours|days|ratio|x|y|skill|legacy_id|attack_skill|defense_skill|maneuvering_skill|coordination_skill|owns_state|expire|add_state_claim|controls_state|size|add_state_core|planning_skill|logistic_skill)\\b"
 				},
 				{
 					"name":"keyword.control.object.hoi",
-					"match": "\\b(country|country_event|bypass|available|ai_will_do|mutually_exclusive|prerequisite|focus|modifier|focus_tree|has_opinion|ai_chance|random_list|option|hidden_effect|news_event|create_wargoal|completion_reward|complete_tooltip|search_filters|swap_ideas|traits|set_rule|add_naval_commander_role|random_country|generator|has_army_manpower|add_ai_strategy|controller|add_relation_modifier|set_politics|remove_opinion_modifier|every_country|any_other_country|add_popularity|add_country_leader_role|country_leader|add_timed_idea|has_country_leader|historical_ai|portraits|civilian|army|trait|allowed)\\b"
+					"match": "\\b(country|country_event|bypass|available|ai_will_do|mutually_exclusive|prerequisite|focus|modifier|focus_tree|has_opinion|ai_chance|random_list|option|hidden_effect|news_event|create_wargoal|completion_reward|complete_tooltip|search_filters|swap_ideas|traits|set_rule|add_naval_commander_role|random_country|generator|has_army_manpower|add_ai_strategy|controller|add_relation_modifier|set_politics|remove_opinion_modifier|every_country|any_other_country|add_popularity|add_country_leader_role|country_leader|add_timed_idea|has_country_leader|historical_ai|portraits|civilian|army|trait|allowed|corps_commander|field_marshal|navy_leader|advisor)\\b"
 				},
 				{
 					"name": "keyword.operator.hoi",

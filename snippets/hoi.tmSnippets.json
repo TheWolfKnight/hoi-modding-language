@@ -1,7 +1,7 @@
 {
   "Add Date": {
     "prefix": "snippet_date",
-    "body": "\"$1.$2.$3.$0\"",
+    "body": "\"${1:YEAR}.${2:MONTH}.${3:DAY}.${0:HOUR}\"",
     "description": "A snippet to quickly add a date"
   },
 
