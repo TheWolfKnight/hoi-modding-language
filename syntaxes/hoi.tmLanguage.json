@@ -20,11 +20,11 @@
 			"patterns": [
 				{
 					"name": "keyword.control.identifier.hoi",
-					"match": "\\b(add_namespace|id|title|desc|picture|target|has_completed_focus|name|tag|icon|set_global_flag|custom_effect_tooltip|set_country_flag|type|add_ideas|set_party_name|ideology|long_name|relative_position_id|remove_idea|add_idea|has_government|has_global_flag|character|will_lead_to_war_with|has_idea|promote_character|controls_state|set_cosmetic_tag|is_in_faction_with|has_war_with|is_controlled_by|is_subject_of|unlock_decision_tooltip|hold_election|country_exists|surrender_progress|get_best_alliance_match_democratic_effect|create_faction|add_to_tech_sharing_group|idea)\\b"
+					"match": "\\b(add_namespace|id|title|desc|picture|target|has_completed_focus|name|tag|icon|set_global_flag|custom_effect_tooltip|set_country_flag|type|add_ideas|set_party_name|ideology|long_name|relative_position_id|remove_idea|add_idea|has_government|has_global_flag|character|will_lead_to_war_with|has_idea|promote_character|controls_state|set_cosmetic_tag|is_in_faction_with|has_war_with|is_controlled_by|is_subject_of|unlock_decision_tooltip|hold_election|country_exists|surrender_progress|get_best_alliance_match_democratic_effect|create_faction|add_to_tech_sharing_group|idea|large|small|slot|idea_token)\\b"
 				},
 				{
 					"name":"keyword.control.boolean.hoi",
-					"match": "\\b(is_in_faction|always|cancel_if_invalid|continue_if_invalid|is_triggered_only|strength_ratio|transfer_troops|available_if_capitulated|can_create_factions|is_subject|exists|is_puppet|has_capitulated|is_major|is_faction_leader|promote_leader|retire_country_leader)\\b"
+					"match": "\\b(is_in_faction|always|cancel_if_invalid|continue_if_invalid|is_triggered_only|strength_ratio|transfer_troops|available_if_capitulated|can_create_factions|is_subject|exists|is_puppet|has_capitulated|is_major|is_faction_leader|promote_leader|retire_country_leader|can_be_fired)\\b"
 				},
 				{
 					"name": "keyword.control.numeric.hoi",
@@ -32,7 +32,7 @@
 				},
 				{
 					"name":"keyword.control.object.hoi",
-					"match": "\\b(country|country_event|bypass|available|ai_will_do|mutually_exclusive|prerequisite|focus|modifier|focus_tree|has_opinion|ai_chance|random_list|option|hidden_effect|news_event|create_wargoal|completion_reward|complete_tooltip|search_filters|swap_ideas|traits|set_rule|add_naval_commander_role|random_country|generator|has_army_manpower|add_ai_strategy|controller|add_relation_modifier|set_politics|remove_opinion_modifier|every_country|any_other_country|add_popularity|add_country_leader_role|country_leader|add_timed_idea|has_country_leader|historical_ai)\\b"
+					"match": "\\b(country|country_event|bypass|available|ai_will_do|mutually_exclusive|prerequisite|focus|modifier|focus_tree|has_opinion|ai_chance|random_list|option|hidden_effect|news_event|create_wargoal|completion_reward|complete_tooltip|search_filters|swap_ideas|traits|set_rule|add_naval_commander_role|random_country|generator|has_army_manpower|add_ai_strategy|controller|add_relation_modifier|set_politics|remove_opinion_modifier|every_country|any_other_country|add_popularity|add_country_leader_role|country_leader|add_timed_idea|has_country_leader|historical_ai|portraits|civilian|army|trait|allowed)\\b"
 				},
 				{
 					"name": "keyword.operator.hoi",

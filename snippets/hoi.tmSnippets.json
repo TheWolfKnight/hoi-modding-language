@@ -1,12 +1,12 @@
 {
   "Add Date": {
-    "prefix": "date",
+    "prefix": "snippet_date",
     "body": "\"$1.$2.$3.$0\"",
     "description": "A snippet to quickly add a date"
   },
 
   "Add focus": {
-    "prefix": "focus",
+    "prefix": "snippet_focus",
     "body": [
       "focus = {",
       "\tid = $1",
@@ -29,8 +29,8 @@
     "description": "Adds the skeletal body of a focus"
   },
 
-  "Add character": {
-    "prefix": "character",
+  "Add country leader": {
+    "prefix": "snippet_country_leader",
     "body": [
       "character = {",
       "\tname = $1",
@@ -40,34 +40,123 @@
       "\t\t\tlarge = $2",
       "\t\t\tsmall = $3",
       "\t\t}",
-      "\t\tarmy = {",
-      "\t\t\tlarge = $4",
-      "\t\t}",
       "\t}",
       "",
       "\tcountry_leader = {",
-      "\t\tideology = $5",
-      "\t\ttrait = {$6",
+      "\t\tideology = $4",
+      "\t\ttrait = {$5",
       "\t\t}",
-      "\t\tdesc = $7",
-      "\t\texpire = $8",
+      "\t\tdesc = $6",
+      "\t\texpire = $7",
+      "\t}",
+      "}"
+    ],
+    "description": "Adds the skeletal body of a country leader"
+  },
+
+  "Add advisor": {
+    "prefix": "snippet_advisor",
+    "body": [
+      "character = {",
+      "\tname = $1",
+      "",
+      "\tportraits = {",
+      "\t\tcivilian = {",
+      "\t\t\tsmall = $2",
+      "\t\t}",
       "\t}",
       "",
       "\tadvisor = {",
-      "\t\tslot = $9",
-      "\t\tidea_token = $10",
-      "\t\talowed = {$11",
+      "\t\tslot = $3",
+      "\t\tidea_token = $4",
+      "\t\tallowed = {$5",
       "\t\t}",
-      "\t\tavailable = {$12",
+      "\t\tavailable = {$6",
       "\t\t}",
-      "\t\ttrait = {$13",
+      "\t\ttrait = {$7",
       "\t\t}",
-      "\t\tcan_be_fired = ${14:yes}",
+      "\t\tcan_be_fired = ${8:yes}",
       "\t\tai_will_do = {",
-      "\t\t\tfactor = $15",
+      "\t\t\tfactor = $9",
       "\t\t}",
       "\t}",
       "}"
-    ]
+    ],
+    "description": "Adds the skeletal body of a advisor"
+  },
+
+  "Add field marshal": {
+    "prefix": "snippet_field_marshal",
+    "body": [
+      "character = {",
+      "\tname = $1",
+      "",
+      "\tportraits = {",
+      "\t\tarmy = {",
+      "\t\t\tlarge = $2",
+      "\t\t}",
+      "\t}",
+      "",
+      "\tfield_marshal = {",
+      "\t\ttraits = {$3",
+      "\t\t}",
+      "\t\tattack_skill = $4",
+      "\t\tdefense_skill = $5",
+      "\t\tplanning_skill = $6",
+      "\t\tlogistic_skill = $7",
+      "\t}",
+      "}"
+    ],
+    "description": "Adds the skeletal body of a field marshal"
+  },
+
+  "Add corps commander": {
+    "prefix": "snippet_corps_commander",
+    "body": [
+      "character = {",
+      "\tname = $1",
+      "",
+      "\tportraits = {",
+      "\t\tarmy = {",
+      "\t\t\tlarge = $2",
+      "\t\t}",
+      "\t}",
+      "",
+      "\tcorps_commander = {",
+      "\t\ttraits = {$3",
+      "\t\t}",
+      "\t\tattack_skill = $4",
+      "\t\tdefense_skill = $5",
+      "\t\tplanning_skill = $6",
+      "\t\tlogistic_skill = $7",
+      "\t}",
+      "}"
+    ],
+    "description": "Adds the skeletal body of a corps commander"
+  },
+
+  "Add navy leader": {
+    "prefix": "snippet_navy_leader",
+    "body": [
+      "character = {",
+      "\tname = $1",
+      "",
+      "\tportraits = {",
+      "\t\tarmy = {",
+      "\t\t\tlarge = $2",
+      "\t\t}",
+      "\t}",
+      "",
+      "\tnavy_leader = {",
+      "\t\ttraits = {$3",
+      "\t\t}",
+      "\t\tattack_skill = $4",
+      "\t\tdefense_skill = $5",
+      "\t\tplanning_skill = $6",
+      "\t\tlogistic_skill = $7",
+      "\t}",
+      "}"
+    ],
+    "description": "Adds the skeletal body of a navy leader"
   }
 }
