@@ -158,5 +158,63 @@
       "}"
     ],
     "description": "Adds the skeletal body of a navy leader"
+  },
+
+  "Add event": {
+    "prefix": "snippet_event",
+    "body": [
+      "country_event = {",
+      "\tid = $1",
+      "\ttitle = $2",
+      "\tdesc = $3",
+      "\tpicture = $4",
+      "",
+      "\tis_triggered_only = ${5:yes}",
+      "",
+      "\toption = {",
+      "\t\tname = $6",
+      "\t\tai_chance = {",
+      "\t\t\tfactor = $7",
+      "\t\t}",
+      "\t}",
+      "}"
+    ]
+  },
+
+  "Add idea": {
+    "prefix": "snippet_idea",
+    "body": [
+      "${1:COUNTRY_TAG} = {",
+      "\tpicture = $2",
+      "\tmodifier = {$3",
+      "\t}",
+      "",
+      "\tallowed_civil_war = {$4",
+      "\t}",
+      "",
+      "\ttargeted_modifier = {$5",
+      "\t}",
+      "",
+      "\tresearch_bonus = {$6",
+      "\t}",
+      "",
+      "\tequipment_bonus = {$7",
+      "\t}",
+      "",
+      "\tremoval_cost = $8",
+      "",
+      "\trule = {$9",
+      "\t}",
+      "}"
+    ]
+  },
+
+  "Add object": {
+    "prefix": "snippet_object",
+    "body": [
+      "$1 = {",
+      "\t$2",
+      "}$0"
+    ]
   }
 }
