@@ -40,7 +40,7 @@
 				},
 				{
 					"name": "keyword.control.mentions.hoi",
-					"match": "\\b(OWNER|PREV|ROOT)\\b"
+					"match": "\\b(OWNER|PREV|ROOT|[A-Z]{3})\\b"
 				}
 			]
 		},
