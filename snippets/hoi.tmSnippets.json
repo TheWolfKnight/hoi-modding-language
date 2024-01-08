@@ -75,7 +75,7 @@
       "\t\t}",
       "\t\ttrait = {$7",
       "\t\t}",
-      "\t\tcan_be_fired = ${8:yes}",
+      "\t\tcan_be_fired = ${8|yes,no|}",
       "\t\tai_will_do = {",
       "\t\t\tfactor = $9",
       "\t\t}",
@@ -169,7 +169,7 @@
       "\tdesc = $3",
       "\tpicture = $4",
       "",
-      "\tis_triggered_only = ${5:yes}",
+      "\tis_triggered_only = ${5|yes,no|}",
       "",
       "\toption = {",
       "\t\tname = $6",
@@ -184,7 +184,7 @@
   "Add idea": {
     "prefix": "snippet_idea",
     "body": [
-      "${1:COUNTRY_TAG} = {",
+      "${1:idea_name} = {",
       "\tpicture = $2",
       "\tmodifier = {$3",
       "\t}",
@@ -228,6 +228,46 @@
       "#######################################################################",
       "### END SECTION: $1",
       "#######################################################################",
+    ]
+  },
+
+  "Add wargoal": {
+    "prefix": "snippet_add_wargoal",
+    "body": [
+      "create_wargoal = {",
+      "\ttype = ${1|annex_everything,puppet_wargoal_focus,take_state_focus|}",
+      "\ttarget = ${2:COUNTRY_TAG}",
+      "}"
+    ]
+  },
+
+  "Add buildings": {
+    "prefix": "snippet_add_buildings",
+    "body": [
+      "add_building_construction = {",
+      "\ttype = ${1|industrial_complex,arms_factory,infrastructure,bunker,air_field|}",
+      "\tlevel = $2",
+      "\tinstant_build = ${3|yes,no|}",
+      "}"
+    ]
+  },
+
+  "Add State": {
+    "prefix": "snippet_state",
+    "body": [
+      "state = {",
+      "\tid=$1",
+      "\tname=\"$2\"",
+      "\tprovinces = {",
+      "\t\t$3",
+      "\t}",
+      "\tmanpower=$4",
+      "\tbuildings_max_level_factor=$5",
+      "\tstate_category=${6|wasteland,enclave,tiny_island,pastoral,small_island,rural,town,large_town,city,large_city,metropolis,megalopolis|}",
+      "\tlocal_supplies=$7",
+      "\thistory={",
+      "\t\t$8",
+      "\t}\n}",
     ]
   }
 
